@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact Us</title>
-  <link rel="stylesheet" href="home.css"/>
+  <link rel="stylesheet" href="contact.css"/>
 </head>
 <body>
   <header class="site-header">
@@ -16,21 +16,28 @@
       <a href="home.html">Home</a>
       <a href="artists.html">Artists</a>
       <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="active">Contact</a>
       <a href="login.html">Login</a>
-     
     </nav>
   </header>
 
-  <main class="content">
+  <main class="contact-section">
     <h1>Contact Us</h1>
-    <text>heyy! Art  enthusiasts any queries ? write it here </text>
-    <form class="form">
+    <p class="intro-text">Heyy! Art enthusiasts — any queries? Write them here.</p>
+    <form class="contact-form" id="contact-form">
       <input type="text" placeholder="Your Name" required />
       <input type="email" placeholder="Your Email" required />
       <textarea placeholder="Your Message" required></textarea>
       <button type="submit">Send Message</button>
     </form>
   </main>
+
+  <script>
+    document.getElementById("contact-form").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Thank you for contacting us! We’ll get back to you soon.");
+      this.reset();
+    });
+  </script>
 </body>
 </html>

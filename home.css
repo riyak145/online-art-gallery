@@ -60,38 +60,6 @@ body {
   padding: 40px;
 }
 
-.form-container {
-  padding: 40px;
-  max-width: 500px;
-  margin: auto;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.form input,
-.form textarea {
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-}
-
-.form button {
-  padding: 12px;
-  background-color: #a089a1;
-  color: white;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.form button:hover {
-  background-color: #7d6c80;
-}
 .gallery-section {
   padding: 50px 20px;
   background-color: #f9f6fb;
